@@ -1,0 +1,11 @@
+skip_tags: true
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+nuget:
+  disable_publish_on_pr: true
+build:
+  project: src/Renci.SshNet.Abstractions.sln
+  publish_nuget: true
+  parallel: true
+  verbosity: minimal
