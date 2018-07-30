@@ -5,9 +5,9 @@ platform: Any CPU
 nuget:
   disable_publish_on_pr: true
 before_build:
-- ps: dotnet restore
+- ps: dotnet restore src\Renci.SshNet.Abstractions.sln
 build:
-  project: src/Renci.SshNet.Abstractions.sln
+  project: src\Renci.SshNet.Abstractions.sln
   publish_nuget: true
   parallel: true
   verbosity: minimal
