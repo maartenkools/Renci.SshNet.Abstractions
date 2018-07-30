@@ -29,4 +29,4 @@ exec { & dotnet build .\src\Renci.SshNet.Abstractions.sln -c Release -v q --no-r
 
 Write-Output $env:APPVEYOR_BUILD_NUMBER
 
-exec { & dotnet pack .\src\Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj -c Release -o .\artifacts --include-symbols --no-build --no-restore  }
+exec { & dotnet pack .\src\Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj -c Release -o (Join-Path $PSScriptRoot "artifacts") --include-symbols --no-build --no-restore  }
