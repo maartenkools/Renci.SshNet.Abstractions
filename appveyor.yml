@@ -8,4 +8,4 @@ build_script:
 test: off
 artifacts:
 - path: '.\artifacts\**\*.nupkg'
-- name: NuGet
+  name: NuGet
