@@ -5,8 +5,11 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9545461-A1D9-4CAB-9E66-5036D405CE4C}"
 	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
+		..\build.ps1 = ..\build.ps1
 		..\global.json = ..\global.json
 		.nuget\NuGet.Config = .nuget\NuGet.Config
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renci.SshNet.Abstractions", "Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj", "{97309B9C-4541-4BEB-ACE7-62DFB469E9B5}"
