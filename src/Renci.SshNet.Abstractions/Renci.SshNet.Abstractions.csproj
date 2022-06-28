@@ -8,7 +8,7 @@
     <Authors>Maarten Kools</Authors>
     <Version>2020.0.2</Version>
     <Description>Provides abstractions for the SSH.NET package</Description>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/maartenkools/Renci.SshNet.Abstractions/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/maartenkools/Renci.SshNet.Abstractions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/maartenkools/Renci.SshNet.Abstractions.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -17,5 +17,9 @@
   <ItemGroup>
     <PackageReference Include="SSH.NET" Version="2020.0.2" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath=""/>
+  </ItemGroup>  
 
 </Project>
