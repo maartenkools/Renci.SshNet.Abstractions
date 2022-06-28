@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;netstandard2.0;net462;net47</TargetFrameworks>
+    <TargetFrameworks>netstandard1.3;netstandard2.0;net35;net40;net472</TargetFrameworks>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Authors>Maarten Kools</Authors>
-    <Version>2016.1.0</Version>
+    <Version>2020.0.2</Version>
     <Description>Provides abstractions for the SSH.NET package</Description>
     <PackageLicenseUrl>https://raw.githubusercontent.com/maartenkools/Renci.SshNet.Abstractions/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/maartenkools/Renci.SshNet.Abstractions</PackageProjectUrl>
@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SSH.NET" Version="2016.1.0" />
+    <PackageReference Include="SSH.NET" Version="2020.0.2" />
   </ItemGroup>
 
 </Project>
