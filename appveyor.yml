@@ -4,10 +4,7 @@ pull_requests:
 nuget:
   disable_publish_on_pr: true
 build_script:
-- ps: |
-  dotnet restore .\src\Renci.SshNet.Abstractions.sln
-  dotnet build .\src\Renci.SshNet.Abstractions.sln -c Release -v q --no-restore /nologo
-  dotnet pack .\src\Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj -c Release -o artifacts --include-symbols --no-build --no-restore /nologo
+- cmd: dotnet pack .\src\Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj -c Release -o artifacts --include-symbols /nologo
 test: off
 artifacts:
 - path: '.\artifacts\**\*.nupkg'
