@@ -4,16 +4,16 @@ pull_requests:
 nuget:
   disable_publish_on_pr: true
 build_script:
-- ps: .\build.ps1
+- cmd: dotnet pack .\src\Renci.SshNet.Abstractions\Renci.SshNet.Abstractions.csproj -c Release -o artifacts --include-symbols /nologo
 test: off
 artifacts:
-- path: '.\artifacts\**\*.nupkg'
+- path: '**\*.nupkg'
   name: NuGet
 deploy:
 - provider: NuGet
   name: production
   api_key:
-    secure: clUnJlfR9/a4dTu2340OT2XEgmQvFdDRwkqZbt2r+yTq4XAC+L536GpWhkSy4bu1
+    secure: BnreJniDdH2DF/eZeshLP/+BO27+3QImTK9Z1g+tn1Ci8ZKfcp1bOjcO9w2n0V7C
   on:
     branch: master
     appveyor_repo_tag: true
